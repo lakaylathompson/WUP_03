@@ -55,27 +55,23 @@ This boxplot shows that ...
 favstats(alcohol~Seat,data=ucdavis1)
 ```
 
-This 
+The numerical summary shows that ...
 
 ### Inferential Results
 
-Now with ggplot - first select the basic data
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+The p-value is 0.000116, less than 0.005 so we reject the null hypothesis.
+There is  difference in alcohol onsumption based on where people sit.
+
+## When significant follow up with TukeyHSD  
 
 ```{r}
-basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
+plot(TukeyHSD(model1))
 ```
-## Now add in boxplot
 
-```{r}
-basicCN + geom_boxplot()
-```
-  
-  
-### get fancy  
-
-```{r}
-basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
-```
 
 ## Conclusions
 
