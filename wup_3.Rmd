@@ -55,7 +55,13 @@ This boxplot shows that the back seat has the highest variation in alcohol level
 favstats(alcohol~Seat,data=ucdavis1)
 ```
 
-The numerical summary shows that the 
+The numerical summary shows:
+
+In the back seats, alcohol range is from 0 to 55, with a common value of 3.5 and an average of 8.56. 
+
+In the front seats, alcohol levels range from 0 to 20 , with a common value of 0 and an average of 1.79.
+
+In the middle seats, alcohol levels range from 0 to 35, with a common value of 1 and an average of 3.33.
 
 
 ### Inferential Results
