@@ -71,7 +71,7 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 The p-value is 0.000116, less than 0.005 so we reject the null hypothesis.
-There is  difference in alcohol consumption based on where people sit.
+There is a difference in alcohol consumption based on where people sit.
 
 ## When significant follow up with TukeyHSD  
 
@@ -82,5 +82,4 @@ plot(TukeyHSD(model1))
 
 ## Conclusions
 
-
-
+The seats in the back have a higher average of people consuming alcohol than those in the front or middle seats. Since the p-value is 0.000116, less than 0.005 so we reject the null hypothesis. The turkey plot shows that there is a difference in alcohol consumption based on where people sit.
