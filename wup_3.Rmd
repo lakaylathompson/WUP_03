@@ -78,7 +78,8 @@ There is a difference in alcohol consumption based on where people sit.
 ```{r}
 plot(TukeyHSD(model1))
 ```
-The turkey plot shows that the chances of the middle-front seats have a low probability of the alcohol levels than the front-back seats, as they fall in between 0.
+
+The turkey plot shows that the middle-front seats have a low probability of alcohol levels than the front-back seats because they fall in between 0.
 
 ## Conclusions
 
